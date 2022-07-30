@@ -1,0 +1,113 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    background-color: rgb(83, 29, 29);
+    
+  }
+
+#heading {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(172, 95, 95) ;
+    background-color:  rgb(54, 18, 18);
+    text-align: center;
+}
+#searchbar {
+    margin-bottom: 5px;
+    flex-direction: column;
+    color: antiquewhite;
+}
+.container {
+    border: 2px solid rgb(172, 95, 95) ;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    background-color: rgb(54, 18, 18);
+}
+
+#forecast-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+#forecast-weather .card {
+    padding: 20px;
+    margin-right: 2px;
+    background-color:  rgb(54, 18, 18);
+    color: white;
+    border-radius: 2px;
+    border-color: rgb(172, 95, 95);
+}
+
+
+
+.uvlow {
+    background-color: rgba(0, 128, 0, 0.582) ;
+    color: white;
+}
+
+.uvmoderate {
+    background-color: orange;
+    color: white;
+}
+
+.uvhigh {
+    background-color: red;
+    color: white;
+}
+
+.uvhigh2 {
+    background-color: purple;
+    color: white;
+}
+
+.uvextreme {
+    background-color: blueviolet;
+    color: white;
+}
+
+.resize {
+    background-size: 10px;
+    width: 30%;
+}
+
+
+@media screen and (max-width: 768px) {
+    header,
+    section {
+        flex-direction: column;
+        font-size: 12px;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    #search-bar {
+        margin-bottom: 5px;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    #forecast-weather {
+        display:block;
+        align-self: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    
+    }
+    
+
+    #forecast-weather .card {
+        display: block;
+        padding: 20px;
+        margin-right: 0 auto;
+
+        background-color: rgba(12, 12, 53, 0.801);
+        color: white;
+        width:50%;
+        text-align: center;
+    }
+}

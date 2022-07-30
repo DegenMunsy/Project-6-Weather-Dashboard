@@ -1,0 +1,111 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    background-color: rgb(188, 186, 206);
+    
+  }
+
+#dashboard {
+    color: white;
+    border: 2px solid black ;
+    background-color: rgb(54, 18, 18);
+    text-align: center;
+}
+#searchbar {
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+.container {
+    border: 5px solid rgb(172, 95, 95) ;
+    font-size: 0.8rem;
+    border-radius: 10px;
+
+}
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+#forecast .card {
+    padding: 20px;
+    margin-right: 2px;
+    background-color: rgba(12, 12, 53, 0.801);
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+.uvlow {
+    background-color: rgba(0, 128, 0, 0.582) ;
+    color: white;
+}
+
+.uvmoderate {
+    background-color: orange;
+    color: white;
+}
+
+.uvhigh {
+    background-color: red;
+    color: white;
+}
+
+.uvhigh2 {
+    background-color: purple;
+    color: white;
+}
+
+.uvextreme {
+    background-color: blueviolet;
+    color: white;
+}
+
+.resize {
+    background-size: 10px;
+    width: 30%;
+}
+
+
+@media screen and (max-width: 768px) {
+    header,
+    section {
+        flex-direction: column;
+        font-size: 12px;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    #searchbar {
+        margin-bottom: 5px;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    #forecast {
+        display:block;
+        align-self: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    
+    }
+    
+
+    #forecast .card {
+        display: block;
+        padding: 20px;
+        margin-right: 0 auto;
+
+        background-color: rgba(12, 12, 53, 0.801);
+        color: white;
+        width:50%;
+        text-align: center;
+    }
+}
